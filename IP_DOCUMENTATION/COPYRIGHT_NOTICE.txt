@@ -1,0 +1,20 @@
+﻿CYBERGUARD - COPYRIGHT NOTICE
+============================
+
+Copyright (c) 2026 CYBERGUARD Project Owner
+
+All rights reserved unless expressly stated otherwise.
+
+This notice applies to the CYBERGUARD source code, software
+implementation, documentation, original graphics, interface
+implementation and other original project materials owned by the
+project owner.
+
+No permission is granted to copy, modify, distribute, sell or
+redistribute the proprietary source code except as expressly
+authorized by the project owner.
+
+This notice does not itself constitute government copyright
+registration.
+
+END

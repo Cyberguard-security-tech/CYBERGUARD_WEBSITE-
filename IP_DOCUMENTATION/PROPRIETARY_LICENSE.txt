@@ -1,0 +1,25 @@
+﻿CYBERGUARD - PROPRIETARY SOFTWARE LICENSE
+=========================================
+
+Copyright (c) 2026 CYBERGUARD Project Owner
+
+PROPRIETARY SOFTWARE
+
+Permission is NOT granted to copy, modify, distribute, sublicense,
+publish, sell or commercially exploit this software or its source
+code without written authorization from the copyright owner.
+
+The CYBERGUARD name, branding, logos, designs and associated
+intellectual property are not licensed for independent use.
+
+This licence does not transfer ownership of the software or
+intellectual property.
+
+For commercial licensing or other permissions, contact the
+CYBERGUARD project owner.
+
+DISCLAIMER:
+This document is a project-level proprietary licence notice and
+should be reviewed by a qualified lawyer before commercial use.
+
+END

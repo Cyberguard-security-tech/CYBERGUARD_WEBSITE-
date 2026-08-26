@@ -1,0 +1,34 @@
+﻿CYBERGUARD - INTELLECTUAL PROPERTY RECORD
+==========================================
+
+Project:
+CYBERGUARD
+
+Type:
+Cybersecurity / Antivirus / Security Platform
+
+This document records the CYBERGUARD project and its associated
+software, architecture, documentation, interface concepts and
+security-engineering concepts as developed by the project owner.
+
+IMPORTANT:
+This document is NOT a patent certificate and does NOT represent
+that a patent has been granted.
+
+Patent protection, where applicable, requires a formal patent
+application and examination by the relevant patent authority.
+
+Project repository:
+https://github.com/Cyberguard-security-tech/CYBERGUARD_WEBSITE-
+
+Recommended protection:
+1. Patent assessment for genuinely novel technical inventions.
+2. Copyright protection for software/source code.
+3. Trademark protection for the CYBERGUARD name/logo where appropriate.
+4. Proprietary licensing for the source code unless an open-source
+   licence is intentionally selected.
+
+Date of record:
+2026-08-27 01:26:43
+
+END

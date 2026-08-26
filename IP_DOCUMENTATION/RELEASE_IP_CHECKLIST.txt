@@ -1,0 +1,22 @@
+﻿CYBERGUARD - RELEASE IP CHECKLIST
+=================================
+
+[ ] Source code preserved in Git
+[ ] Release version identified
+[ ] Secrets excluded from Git
+[ ] Proprietary licence included
+[ ] Copyright notice included
+[ ] Patent concept documented
+[ ] Trademark concept documented
+[ ] Patent prior-art search performed
+[ ] Patent filing strategy reviewed
+[ ] Copyright registration considered
+[ ] Trademark registration considered
+[ ] Production deployment reviewed
+
+IMPORTANT:
+Patent, copyright and trademark rights are obtained/registered
+through their respective legal processes and are not automatically
+created by this repository.
+
+END
