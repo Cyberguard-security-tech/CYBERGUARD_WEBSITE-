@@ -20,7 +20,7 @@ import {
 
 import "./style.css";
 
-const API = "http://localhost:3000/api";
+const API = "/api";
 
 const features = [
   {
@@ -761,4 +761,5 @@ createRoot(
 ).render(
   <App />
 );
+
 
