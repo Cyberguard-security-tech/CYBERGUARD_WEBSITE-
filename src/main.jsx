@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   Shield,
@@ -98,31 +98,51 @@ function App() {
   async function ownerLogin(event) {
     event.preventDefault();
 
-    const response = await fetch(`${API}/admin/login`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        pin: ownerPin
-      })
-    });
+    setOwnerMessage("Checking owner PIN...");
 
-    const data = await response.json();
+    try {
+      const response = await fetch(`${API}/admin/login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          pin: ownerPin
+        })
+      });
 
-    if (!response.ok) {
-      setOwnerMessage(data.error || "Login failed");
-      return;
+      const data = await response.json();
+
+      if (!response.ok) {
+        setOwnerMessage(
+          data.error || `Login failed (${response.status})`
+        );
+        return;
+      }
+
+      if (!data.token) {
+        setOwnerMessage(
+          "Login failed: server did not return a token."
+        );
+        return;
+      }
+
+      localStorage.setItem(
+        "cyberguard_owner_token",
+        data.token
+      );
+
+      setToken(data.token);
+      setOwnerMessage("Owner control activated.");
+      setOwnerPin("");
+
+    } catch (error) {
+      console.error(error);
+
+      setOwnerMessage(
+        "Cannot connect to CYBERGUARD server."
+      );
     }
-
-    localStorage.setItem(
-      "cyberguard_owner_token",
-      data.token
-    );
-
-    setToken(data.token);
-    setOwnerMessage("Owner control activated.");
-    setOwnerPin("");
   }
 
   async function saveContent(event) {
@@ -488,7 +508,7 @@ function App() {
           </p>
 
           <div className="ai-badge">
-            AI SECURITY ASSISTANT · COMING SOON
+            AI SECURITY ASSISTANT Â· COMING SOON
           </div>
 
         </div>
@@ -727,7 +747,7 @@ function App() {
         </div>
 
         <span>
-          © 2026 CYBERGUARD · COMING SOON
+          Â© 2026 CYBERGUARD Â· COMING SOON
         </span>
 
       </footer>
@@ -741,3 +761,4 @@ createRoot(
 ).render(
   <App />
 );
+
